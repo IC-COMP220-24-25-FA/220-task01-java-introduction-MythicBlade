@@ -40,6 +40,21 @@ public class CircleTest {
         myCircle = new Circle(0.001);
         assertEquals(0.002 , myCircle.longestLineWithin(),0.0000001);
     } 
+
+    @Test
+    public void doubleSizeTest(){
+        Circle myCircle = new Circle(1);
+        myCircle.doubleSize();
+        assertEquals(4 , myCircle.longestLineWithin(),0.0001);
+        
+        myCircle = new Circle(5.5);
+        myCircle.doubleSize();
+        assertEquals(22, myCircle.longestLineWithin(),0.0001);
+
+        myCircle = new Circle(0.001);
+        myCircle.doubleSize();
+        assertEquals(0.004 , myCircle.longestLineWithin(),0.0000001);
+    } 
     
     @Test
     public void TestConstructorError(){
