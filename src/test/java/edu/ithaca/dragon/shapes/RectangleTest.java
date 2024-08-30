@@ -37,4 +37,18 @@ public class RectangleTest {
         assertEquals(0.141421, myRectangle.longestLineWithin(), 0.000001);
     }
 
+    @Test
+    public void doubleSizeTest(){
+        Rectangle myRectangle = new Rectangle(1,1);
+        myRectangle.doubleSize();
+        assertEquals(2.828427, myRectangle.longestLineWithin(), 0.0001);
+        
+        myRectangle = new Rectangle(5,5);
+        myRectangle.doubleSize();
+        assertEquals(14.1421356, myRectangle.longestLineWithin(), 0.0001);
+
+        myRectangle = new Rectangle(0.1,0.1);
+        myRectangle.doubleSize();
+        assertEquals(0.2828427, myRectangle.longestLineWithin(), 0.000001);
+    }
 }
