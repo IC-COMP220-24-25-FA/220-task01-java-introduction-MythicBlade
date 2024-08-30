@@ -4,7 +4,9 @@ public class Rectangle {
     
 
     public Rectangle(double length, double width){
-        throw new RuntimeException("Not implemented yet");
+        if (length <= 0 || width <= 0) {
+            throw new IllegalArgumentException("invalid dimension");
+        }
     }
 
     public double calcArea(){
