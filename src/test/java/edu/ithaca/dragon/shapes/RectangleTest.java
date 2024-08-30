@@ -25,4 +25,16 @@ public class RectangleTest {
         assertEquals(0.01, myRectangle.calcArea(), 0.000001);
     }
 
+    @Test
+    public void longestLineWithinTest(){
+        Rectangle myRectangle = new Rectangle(1,1);
+        assertEquals(1.41421, myRectangle.longestLineWithin(), 0.0001);
+        
+        myRectangle = new Rectangle(5,5);
+        assertEquals(7.07106, myRectangle.longestLineWithin(), 0.0001);
+
+        myRectangle = new Rectangle(0.1,0.1);
+        assertEquals(0.44721359, myRectangle.longestLineWithin(), 0.000001);
+    }
+
 }
