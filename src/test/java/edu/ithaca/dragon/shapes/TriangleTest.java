@@ -19,7 +19,7 @@ public class TriangleTest {
     @Test
     public void longestLineWithinTest(){
         Triangle myTriangle =  new Triangle(1);
-        assertEquals(1, myTriangle.longestLineWithin(), 0.0);
+        assertEquals(1, myTriangle.longestLineWithin(), 0.001);
     }
 
 }

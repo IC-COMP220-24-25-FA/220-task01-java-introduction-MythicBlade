@@ -13,4 +13,8 @@ public class Triangle {
         return (Math.sqrt(3)*sideLength)/2;
     }
 
+    public double longestLineWithin(){
+        return sideLength;
+    }
+
 }
