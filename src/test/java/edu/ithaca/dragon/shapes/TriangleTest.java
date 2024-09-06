@@ -16,4 +16,10 @@ public class TriangleTest {
         assertEquals(0.866025, myTriangle.calcArea(),0.01);
     }
 
+    @Test
+    public void longestLineWithinTest(){
+        Triangle myTriangle =  new Triangle(1);
+        assertEquals(1, myTriangle.longestLineWithin(), 0.0);
+    }
+
 }
