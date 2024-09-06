@@ -17,4 +17,8 @@ public class Triangle {
         return sideLength;
     }
 
+    public void doubleSize(){
+        sideLength = sideLength*2;
+    }
+
 }
